@@ -8,7 +8,9 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 public class LoginController {
 	
-	public ModelAndView getLoginPAge() {
+	public ModelAndView getLoginPage() {
+		
+		System.out.println("####### Login Method ########");
 		
 		ModelAndView modelAndView = new ModelAndView("/login.jsp");
 		return modelAndView;
